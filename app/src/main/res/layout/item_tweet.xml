@@ -34,17 +34,48 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
+        android:autoLink="all"
+        android:linksClickable="true"
         tools:text="This is my tweet!" />
 
     <TextView
         android:id="@+id/tvTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="44dp"
+        android:layout_height="23dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="187dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="2dp"
-        android:layout_toEndOf="@+id/tvScreenName"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="1dp"
         tools:text="25min ago" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/imageView2"
+        app:srcCompat="@drawable/ic_vector_heart_stroke" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/imageView4"
+        app:srcCompat="@drawable/ic_vector_retweet_stroke" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_vector_messages_stroke" />
+
 </RelativeLayout>
